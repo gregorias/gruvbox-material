@@ -13,13 +13,6 @@ let s:path = expand('<sfile>:p') " the path of this script
 let s:last_modified = 'Mon Apr 24 19:15:08 UTC 2023'
 let g:gruvbox_material_loaded_file_types = []
 
-if !(exists('g:colors_name') && g:colors_name ==# 'gruvbox-material' && s:configuration.better_performance)
-  highlight clear
-  if exists('syntax_on')
-    syntax reset
-  endif
-endif
-
 let g:colors_name = 'gruvbox-material'
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running') && &t_Co != 256
