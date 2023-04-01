@@ -1138,9 +1138,12 @@ highlight! link BufTabLineFill TabLineFill
 " }}}
 " liuchengxu/vim-which-key {{{
 highlight! link WhichKey Red
-highlight! link WhichKeySeperator Green
+highlight! link WhichKeySeparator Green
+highlight! link WhichKeyValue Green
 highlight! link WhichKeyGroup Yellow
 highlight! link WhichKeyDesc Blue
+highlight! link WhichKeyFloat NormalFloat
+highlight! link WhichKeyBorder FloatBorder
 " }}}
 " junegunn/limelight.vim {{{
 let g:limelight_conceal_ctermfg = s:palette.grey0[1]
