@@ -1595,6 +1595,12 @@ highlight! link NvimTreeLspDiagnosticsWarning YellowSign
 highlight! link NvimTreeLspDiagnosticsInformation BlueSign
 highlight! link NvimTreeLspDiagnosticsHint GreenSign
 " syn_end }}}
+" syn_begin: vim-choosewin {{{
+" https://github.com/gregorias/vim-choosewin
+highlight! link ChooseWinOther StatusLineNC
+call gruvbox_material#highlight('ChooseWinLabelCurrent', s:palette.bg0, s:palette.grey2, 'bold')
+call gruvbox_material#highlight('ChooseWinLabel', s:palette.bg0, s:palette.grey0)
+" syn_end }}}
 " syn_begin: fern {{{
 " https://github.com/lambdalisue/fern.vim
 highlight! link FernMarkedLine Purple
